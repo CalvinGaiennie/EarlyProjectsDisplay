@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Test</title>
+    <style>
+      .back-to-index {
+        position: fixed;
+        top: 0.75rem;
+        right: 1rem;
+        padding: 0.35rem 0.75rem;
+        background: #2c2c2c;
+        color: #fff;
+        text-decoration: none;
+        font-size: 0.9rem;
+        border-radius: 4px;
+      }
+      .back-to-index:hover {
+        background: #444;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="../index.html" class="back-to-index">← All projects</a>
+    <h1>Morse Code Tester</h1>
+    <p>Do you want to practice encoding or decoding?</p>
+    <select>
+      <option value="encode" selected>Encode</option>
+      <option value="decode">Decode</option>
+    </select>
+    <p>Example Text</p>
+    <p id="example-text">...</p>
+    <button id="load-text">Load New Text</button>
+    <br />
+    <p>Submit your text here.</p>
+    <input id="text-input" />
+    <br />
+    <button id="submit-answer">Submit Answer</button>
+    <script src="script.js"></script>
+  </body>
+</html>

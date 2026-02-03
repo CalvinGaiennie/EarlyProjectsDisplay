@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Compound Interst Calculator</title>
+    <style>
+      .back-to-index {
+        position: fixed;
+        top: 0.75rem;
+        right: 1rem;
+        padding: 0.35rem 0.75rem;
+        background: #2c2c2c;
+        color: #fff;
+        text-decoration: none;
+        font-size: 0.9rem;
+        border-radius: 4px;
+      }
+      .back-to-index:hover {
+        background: #444;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="../index.html" class="back-to-index">← All projects</a>
+    <span>
+      <h2>Compound Interest Calculator</h2>
+      <p id="initial" class="initial">Initial Deposit</p>
+        <span>
+            $
+            <input
+                id="initialInvestment"
+                class="initialInvestment"
+                type="number"
+                placeholder="$5000"
+            />
+            <br>
+            <!-- <p class="Initial"> Additional Contributions</p>
+            <br>
+            $
+            <input
+                id="additionalContributions"
+                class="additionalContributions"
+                type="number"
+                placeholder="10"
+            /> -->
+            <br>
+            <p class="yearsOfGrowth"> Years of Growth</p>
+            <br>
+            <input
+                id="yearsOfGrowth"
+                class="yearsOfGrowth"
+                type="number"
+                placeholder="10"
+            />
+            <br>
+            <p class="returnPercentage"> Estimated Rate of return</p>
+            <br>
+            <input
+                id="returnPercentage"
+                class="returnPercentage"
+                type="number"
+                placeholder="10%"
+            />
+            %
+            <!-- <p class="additionContribution"> Additional Contribution Ammount</p>
+            <br> -->
+            <!-- $
+            <input
+                id="AadditionContribution"
+                class="additionContribution"
+                type="number"
+                placeholder="1000"
+            />
+         </span> -->
+    </form>
+    <form id="Solution">
+        <button type="button" class="generate" onclick="calculate()">
+          Generate Solution
+        </button>
+        <p2>Solution: <span id="solutionText"></span></p2>
+      </form>
+  </body>
+  <script src="script.js"></script>
+</html>
